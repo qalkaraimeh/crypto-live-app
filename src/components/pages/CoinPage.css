@@ -1,0 +1,84 @@
+.coin-container .content {
+  max-width: 720px;
+  margin: 1em auto;
+  padding: 0.8em 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: #26272b;
+  box-shadow: 0px 0px 12px #1b1b1b;
+}
+
+.rank {
+  margin: 0.5em 0;
+}
+
+.rank-btn {
+  border: 1px solid #2b22ac;
+  box-shadow: 0px 0px 10px #2b22ac;
+  background-color: #2b22ac;
+  border-radius: 5px;
+  padding: 0.1em;
+}
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.info .coin-heading {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+}
+.coin-heading img {
+  margin-right: 0.3em;
+}
+.info .coin-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info p {
+  padding-right: 1em;
+}
+
+.table {
+  margin: 0.5em 0;
+}
+td,
+th {
+  padding: 0.5em;
+  text-align: center;
+}
+th {
+  background-color: #1b1b1b;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+  width: 100%;
+}
+.stats .row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  margin: 0.5em 0;
+  padding-bottom: 0.5em;
+}
+
+.about h3 {
+  margin: 1em 0;
+}
+
+@media screen and (max-width: 700px) {
+  .coin-container .content {
+    max-width: 100%;
+    margin: 0.5em;
+  }
+  .stats {
+    grid-template-columns: 1fr;
+  }
+  td,
+  th {
+    padding: 0.3em;
+  }
+}
